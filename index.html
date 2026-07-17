@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Anniversary Surprise💌😽</title>
+<style>
+body{
+background:black;
+color:white;
+font-family:Arial;
+text-align:center;
+margin:0;
+padding:0;
+}
+
+#main{display:none;}
+
+img{
+width:300px;
+height:auto;
+border-radius:20px;
+margin-top:20px;
+box-shadow:0 0 20px pink;
+}
+
+h1{
+color:pink;
+animation: glow 2s infinite alternate;
+}
+
+@keyframes glow{
+from{ text-shadow:0 0 10px pink; }
+to{ text-shadow:0 0 30px red; }
+}
+
+button{
+padding:10px 20px;
+font-size:18px;
+}
+</style>
+</head>
+<body>
+
+<div id="login">
+<h2>💗Secret Love Page💗</h2>
+<input type="password" id="pass" placeholder="Enter Password">
+<br><br>
+<button onclick="check()">Open</button>
+</div>
+
+<div id="main">
+<h1>Happy Anniversary My Love💌💍♾️🌷👩‍❤️‍💋‍👨</h1>
+
+
+<img src="IMG_20260530_141249_022.jpg" width="300"><br><br>
+
+<img src="IMG_20260715_162912_452.jpg" width="300"><br><br>
+
+<img src="IMG_20260715_173637_179.jpg" width="300"><br><br>
+
+<img src="IMG_20260715_173654_491.jpg" width="300"><br><br>
+
+<img src="IMG_20260716_131120_710.jpg" width="300"><br><br>
+
+<img src="IMG_20260716_131708_111.jpg" width="300"><br><br>
+<p id="msg"></p>
+Every moment with you is my favorite memory😩🤌🏻🩵
+</p>
+
+<audio autoplay controls loop>
+<source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<br><br>
+<button onclick="letter()">Open Surprise Letter 💌</button>
+
+</div>
+
+<script>
+function check(){
+let p=document.getElementById("pass").value;
+if(p=="7373"){
+document.getElementById("login").style.display="none";
+document.getElementById("main").style.display="block";
+}else{
+alert("Wrong Password 😜");
+}
+}
+
+
+
+let i=0;
+setInterval(()=>{
+i=(i+1)%photos.length;
+document.getElementById("slide").src=photos[i];
+},2500);
+
+function letter(){
+alert("My Love🫶🏻💍\n\nThank you for being my happiness, my strength and my forever. Happy Anniversary💞😽💎");
+}
+</script>
+<div id="loveLetter" style="
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:linear-gradient(135deg,#ff758c,#ff7eb3);
+color:white;
+overflow:auto;
+padding:30px;
+box-sizing:border-box;
+z-index:9999;
+">
+
+<h1 style="text-align:center;">💌 To My Forever Love 💌</h1>
+
+<p style="font-size:22px;line-height:1.8;max-width:800px;margin:auto;text-align:center;">
+
+My Love 💌🧸,
+
+Indha rendu varusham en vazhkaila nadantha azhagana gift nee than.
+
+Unna first time paatha naal irundhu, indha nimisham varaikkum,
+nee en sirippukum karanam, en santhoshathukum karanam.
+
+Kashtamana naatkal vanthalum, sandhoshamaana nimishangal vanthalum,
+naan ninaikkura mudhal aal nee than.
+
+Un kooda pesura ovvoru nimishamum enakku oru pudhu santhosham.
+Un sirippu enakku amaidhi.
+Un anbu enakku balam.
+
+Naan perfect illa...
+Aana unna nesikkura anbu mattum unmaiyanaadhu.
+
+Indha ulagathula enakku kedaicha periya blessing nee than.
+Naan ketkaama kadavul kudutha azhagana gift nee than.
+
+Naalai enna nadandhaalum,
+varushangal evlo ponaalum,
+en manasu un peyarai dhaan nesikkum.
+
+Thank you for loving me.
+Thank you for staying with me.
+Thank you for being my happiness.
+
+Happy Anniversary My Love🥹💍♾️💋👩‍❤️‍💋‍👨
+
+I Love You Today,
+I Love You Tomorrow,
+I Love You Forever...♾️💎🌷
+
+</p>
+
+<br><br>
+
+<center>
+<button onclick="closeLetter()" style="
+padding:12px 25px;
+font-size:18px;
+border:none;
+border-radius:10px;
+cursor:pointer;">
+Close💗
+</button>
+</center>
+
+</div>
+
+<script>
+function letter(){
+document.getElementById("loveLetter").style.display="block";
+}
+
+function closeLetter(){
+document.getElementById("loveLetter").style.display="none";
+}
+</script>
+</body>
+</html>
